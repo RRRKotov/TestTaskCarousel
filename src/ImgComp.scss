@@ -1,0 +1,30 @@
+
+
+.mainImg{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+   align-items: center;
+  justify-content: flex-end;
+    
+} 
+
+
+.circles {
+   position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    color:white;
+    opacity: .6;
+    margin: 5px;
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+
+

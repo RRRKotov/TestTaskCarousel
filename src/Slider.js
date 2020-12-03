@@ -9,6 +9,7 @@ import i5 from "./img/i5.png";
 
 
 function Slider() {
+  
   let sliderArr = [
     <ImgComp src={i1} />,
     <ImgComp src={i2} />,
@@ -17,6 +18,8 @@ function Slider() {
     <ImgComp src={i5} />,
   ];
   const [x, setX] = useState(0);
+  console.log(x);
+  console.log(this);
   const goLeft = () => {
     x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100);
   };
@@ -35,14 +38,15 @@ function Slider() {
             style={{ transform: `translateX(${x}%)` }}
           >
             {item}
+            
           </div>
         );
       })}
       <button id="goLeft" onClick={goLeft}>
-      <i class="fas fa-chevron-left"></i>
+      <i className="fas fa-chevron-left"></i>
       </button>
       <button id="goRight" onClick={goRight}>
-      <i class="fas fa-chevron-right"></i>
+      <i className="fas fa-chevron-right"></i>
       </button>
     </div>
   );

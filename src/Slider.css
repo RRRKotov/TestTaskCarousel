@@ -17,6 +17,7 @@
     height: 100%;
     transition: 0.5s;
     overflow: hidden;
+    display: flex;
 }
 
 #goLeft {
