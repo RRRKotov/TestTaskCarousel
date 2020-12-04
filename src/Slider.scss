@@ -2,13 +2,15 @@
 .slider{
     position: relative;
     width:100%;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     display: flex;
     overflow: hidden;
     background: black;
+    
+    
     i {
         font-size:2vw ;
     }
@@ -17,11 +19,13 @@
 .slide{
     position: relative;
     min-width: 100%;
-    height: 100vh;
+    height: 80%;
     transition: 0.5s;
     overflow: hidden;
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   
 }
 
 
@@ -36,10 +40,10 @@
     outline: none;
     transition: .5s;
     &:hover{
-        background: rgba(0,0,0,0.4);
+        
         cursor: pointer;
         i {
-            color: whitesmoke;
+            color:white;
         }
     }
 }
@@ -52,4 +56,47 @@
 #goRight {
     right: 0;
     @extend %btn-styles;
+}
+
+
+.circles {
+   
+    width: 100%;
+    position: absolute;
+     display: flex;
+     justify-content: center;
+    
+     
+
+     
+  
+ }
+
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+}
+
+.container{
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+background-color: black;
+
+
+}
+
+
+i {
+    color:white;
+    opacity: .6;
+    margin: 5px;
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+        transition: 0.5s;
+    }
 }
