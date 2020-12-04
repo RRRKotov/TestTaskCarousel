@@ -30,7 +30,10 @@ const Slider = () => {
     setX(value);
   };
 
+
   useEffect(() => {
+    
+    
     let circles = document.querySelectorAll(".fa-circle");
     const clearOpac=()=>{
       circles.forEach(element=>element.style.opacity=0.6)
