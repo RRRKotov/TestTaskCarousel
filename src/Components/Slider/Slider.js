@@ -1,11 +1,11 @@
 import React, { Component, useState, useEffect } from "react";
 import "./Slider.scss";
-import ImgComp from "./ImgComp";
-import i1 from "./img/i1.jpg";
-import i2 from "./img/i2.jpg";
-import i3 from "./img/i3.jpg";
-import i4 from "./img/i4.jpg";
-import i5 from "./img/i5.png";
+import ImgComp from "../ImgComp/ImgComp";
+import i1 from "../../img/i1.jpg";
+import i2 from "../../img/i2.jpg";
+import i3 from "../../img/i3.jpg";
+import i4 from "../../img/i4.jpg";
+import i5 from "../../img/i5.png";
 
 const Slider = () => {
   const [x, setX] = useState(0);
