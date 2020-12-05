@@ -1,5 +1,9 @@
 # React carousel component
 
+## Project setup
+* npm install
+* npm start
+
 ## Application functionality
 
 * Works on desktop and mobile devices
@@ -9,6 +13,7 @@
 ## Demonstration of work on mobile and desktop
 
 ![Alt Text](demo/demo.gif)
+If you experience problems with loading this gif you can dowload it from demo/demo.gif
 
 
 ## Restrictions
