@@ -1,11 +1,16 @@
 import React, { Component, useState, useEffect } from "react";
-import "./Slider.scss";
+import "./Slider.css";
 import ImgComp from "../ImgComp/ImgComp";
 import i1 from "../../img/i1.jpg";
 import i2 from "../../img/i2.jpg";
 import i3 from "../../img/i3.jpg";
 import i4 from "../../img/i4.jpg";
 import i5 from "../../img/i5.png";
+
+import left from "../../img/left.png"
+
+import right from "../../img/right.png"
+
 
 const Slider = () => {
   const [x, setX] = useState(0);
@@ -34,7 +39,7 @@ const Slider = () => {
   useEffect(() => {
     
     
-    let circles = document.querySelectorAll(".fa-circle");
+    let circles = document.querySelectorAll(".dot");
     const clearOpac=()=>{
       circles.forEach(element=>element.style.opacity=0.6)
     }
@@ -77,19 +82,19 @@ const Slider = () => {
               </div>
             );
           })}
-          <button id="goLeft" onClick={goLeft}>
-            <i className="fas fa-chevron-left"></i>
+          <button class="button left" onClick={goLeft}>
+            <img src={left} className="arrow"/>
           </button>
-          <button id="goRight" onClick={goRight}>
-            <i className="fas fa-chevron-right"></i>
+          <button class="button right" onClick={goRight}>
+          <img src={right} className="arrow"/>
           </button>
         </div>
         <div className="circles">
-          <i onClick={() => dotClick(0)} className="fas fa-circle"></i>
-          <i onClick={() => dotClick(-100)} className="fas fa-circle"></i>
-          <i onClick={() => dotClick(-200)} className="fas fa-circle"></i>
-          <i onClick={() => dotClick(-300)} className="fas fa-circle"></i>
-          <i onClick={() => dotClick(-400)} className="fas fa-circle"></i>
+          <div onClick={() => dotClick(0)} className="dot"></div>
+          <div onClick={() => dotClick(-100)} className="dot"></div>
+          <div onClick={() => dotClick(-200)} className="dot"></div>
+          <div onClick={() => dotClick(-300)} className="dot"></div>
+          <div onClick={() => dotClick(-400)} className="dot"></div>
         </div>
       </div>
     </div>
