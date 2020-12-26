@@ -16,8 +16,18 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
+        use: [
+          require.resolve('style-loader'),
+          {
+              loader: require.resolve('css-loader'),
+              options: {
+                  importLoaders: 1,
+                  modules: true,
+                  localIdentName: "[name]__[local]"
+              },
+          },
+        ]
+    },
       {
         test: /\.(png|jpe?g|gif)$/,
         use: [
@@ -25,14 +35,6 @@ module.exports = {
             loader: "file-loader",
           },
         ],
-      },
-      {
-        test: /\.s[ac]ss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.svg$/,
-        use: ["@svgr/webpack"],
       },
     ],
   },

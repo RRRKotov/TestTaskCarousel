@@ -10,15 +10,14 @@
     ]
   },
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "start": "webpack serve --open Chrome.exe",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
-    "node-sass": "^5.0.0",
+    "css-loader": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -27,19 +26,15 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@svgr/webpack": "^5.5.0",
+    "@webpack-cli/serve": "^1.1.0",
     "babel-loader": "^8.1.0",
-    "css-loader": "^4.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.4.1",
     "image-minimizer-webpack-plugin": "^1.0.0",
     "img-loader": "^3.0.2",
-    "sass": "^1.29.0",
-    "sass-loader": "^10.1.0",
     "style-loader": "^1.2.1",
-    "svg-url-loader": "^7.1.1",
-    "url-loader": "^4.1.1",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
+    "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"
   }
 }
