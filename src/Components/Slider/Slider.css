@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: black;
 }
 
@@ -31,7 +31,6 @@
   background: none;
   transform: translateY(-50%);
   width: 10%;
-  height: 100%;
   border: none;
   outline: none;
   transition: 0.5s;
@@ -109,6 +108,9 @@ button:hover img {
 
   .circles {
     display: none;
+  }
+  .button {
+    height: 100%;
   }
 
   .button img {

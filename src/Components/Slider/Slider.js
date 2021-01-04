@@ -68,18 +68,6 @@ const Slider = () => {
               </div>
             );
           })}
-          <button
-            className={styles.button + " " + styles.left}
-            onClick={goLeft}
-          >
-            <img src={left} className={styles.arrow} />
-          </button>
-          <button
-            className={styles.button + " " + styles.right}
-            onClick={goRight}
-          >
-            <img src={right} className={styles.arrow} />
-          </button>
         </div>
         <div className={styles.circles}>
           {sliderArr.map((item, index) => {
@@ -93,6 +81,15 @@ const Slider = () => {
             );
           })}
         </div>
+        <button className={styles.button + " " + styles.left} onClick={goLeft}>
+          <img src={left} className={styles.arrow} />
+        </button>
+        <button
+          className={styles.button + " " + styles.right}
+          onClick={goRight}
+        >
+          <img src={right} className={styles.arrow} />
+        </button>
       </div>
     </div>
   );
