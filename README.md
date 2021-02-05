@@ -9,6 +9,8 @@
 * Works on desktop and mobile devices
 * Supports an infinite option
 * Supports scrolling to a selected slide
+* Supports mobile swipes
+* Supports any kind of HTML(data is stored in json file)
 
 ## Demonstration of work on mobile and desktop
 

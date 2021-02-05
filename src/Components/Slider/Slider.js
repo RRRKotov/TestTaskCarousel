@@ -1,27 +1,22 @@
 import React, { useState, useEffect } from "react";
 import "./Slider.css";
-import ImgComp from "../ImgComp/ImgComp";
-import i1 from "../../img/i1.jpg";
-import i2 from "../../img/i2.jpg";
-import i3 from "../../img/i3.jpg";
-import i4 from "../../img/i4.jpg";
-import i5 from "../../img/i5.png";
+import SlideContainer from "../SlideContainer/SlideContainer";
+
 import left from "../../img/left.png";
 import right from "../../img/right.png";
 import styles from "./Slider.css";
+import data from "../../../data.json";
 
 const Slider = () => {
   const [x, setX] = useState(0);
-
-  const images = [i1, i2, i3, i4, i5];
 
   const NUMBER_OF_SLIDES = 5;
 
   let sliderArr = [];
 
-  images.forEach((item, index) => {
+  data.forEach((item, index) => {
     if (index < NUMBER_OF_SLIDES) {
-      sliderArr.push(<ImgComp src={item} />);
+      sliderArr.push(<SlideContainer props={item} />);
     }
   });
 

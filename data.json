@@ -1,0 +1,68 @@
+[
+  {
+    "html": "<div>Supports</div>",
+    "css": {
+      "color": "blue",
+      "width": "80%",
+      "height": "80%",
+      "background": "white",
+      "display": "flex",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "borderRadius":"15%"
+    }
+  },
+  {
+    "html": "<div>Any</div>",
+    "css": {
+      "color": "silver",
+      "width": "80%",
+      "height": "80%",
+      "background": "white",
+      "display": "flex",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "borderRadius":"15%"
+    }
+  },
+  {
+    "html": "<div>Kind</div>",
+    "css": {
+      "color": "aqua",
+      "width": "80%",
+      "height": "80%",
+      "background": "white",
+      "display": "flex",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "borderRadius":"15%"
+    }
+  },
+  {
+    "html": "<div>Of</div>",
+    "css": {
+      "color": "orange",
+      "width": "80%",
+      "height": "80%",
+      "background": "white",
+      "display": "flex",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "borderRadius":"15%"
+      
+    }
+  },
+  {
+    "html": "<div>HTML</div>",
+    "css": {
+      "color": "lime",
+      "width": "80%",
+      "height": "80%",
+      "background": "white",
+      "display": "flex",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "borderRadius":"15%"
+    }
+  }
+]

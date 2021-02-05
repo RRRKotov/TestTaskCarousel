@@ -1,0 +1,9 @@
+* {
+  font-size: 120%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.SliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
