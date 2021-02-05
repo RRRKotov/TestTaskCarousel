@@ -1,6 +1,7 @@
 * {
-  font-size: 120%;
+  font-size: 7vw;
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 .SliderContainer {
   display: flex;
